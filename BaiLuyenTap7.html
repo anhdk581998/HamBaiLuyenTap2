@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 7: Viết hàm truyền vào 2 số nguyên bất kì, thực hiện đổi chỗ hai số nguyên đó.</title>
+</head>
+<body>
+<script>
+
+
+  function changePlaces(a,b) {
+    console.log(`trước khi đổi chỗ a = ${a}, b = ${b}`)
+    let c = a;
+    a = b;
+    b = c;
+    console.log( `a = ${a} b=${b}`)
+  }
+
+  let a = +prompt("nhập số a")
+  let b = +prompt("nhập số b")
+  changePlaces(a,b)
+  // console.log("số a là: "+a+"số b là: "+ b)
+
+</script>
+</body>
+</html>

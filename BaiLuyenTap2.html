@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 2: Viết hàm tính diện tích, hàm tính chu vi hình tròn. Gọi hàm vừa xây dựng được</title>
+</head>
+<body>
+<script>
+    function circleArea(r) {
+        let s = r*r*3.14  
+        return s
+    }
+    function circleCircumference(r) {
+        let c = r*2*3.14
+        return c
+    }
+    let r = +prompt("nhập bán kính đường tròn")
+    alert('diện tích hình tròn là: '+ circleArea(r))
+    alert('chu vi hình tròn là: '+ circleCircumference(r))
+</script>
+</body>
+</html>

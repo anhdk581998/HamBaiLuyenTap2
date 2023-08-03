@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 4: Viết hàm kiểm tra xem ký tự nhập vào có phải là ký tự số không.
+        Nếu là ký tự số hàm trả về true, ngược lại trả về false.</title>
+</head>
+<body>
+<script>
+    function isN(x){
+        let isN = false;
+        if (x !==isNaN ){
+            isN = true;
+        }else {isN =  false}
+        return isN
+    }
+    let a = prompt("nhập vào 1 giá trị")
+    if (isN(a)){
+        alert("giá trị vừa nhập Là số")
+    }else {
+    alert("giá trị vừa nhập không phải số")}
+</script>
+</body>
+</html>

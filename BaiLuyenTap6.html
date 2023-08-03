@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 6: Viết hàm nhận vào một số, kiểm tra xem nếu số đưa vào có phải là nguyên dương không.
+      Nếu là nguyên dương trả về true, ngược lại trả về false.</title>
+</head>
+<body>
+<script>
+  function isN(x){
+    let isN = false;
+    if (x !==isNaN ){
+      isN = true;
+    }else {isN =  false}
+    return isN
+  }
+  function positiveInteger(x) {
+    if ( isN(x) && x > 0){
+      return true
+    }else return false
+  }
+  let x = prompt("nhập vào ký tự cần kiểm tra")
+  if (positiveInteger(x)){
+    alert("số này là số nguyên dương")
+  }else {
+    alert("số này không phải số nguyên dương")
+  }
+</script>
+</body>
+</html>
